@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Fabule Home - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="fabule_home">c8de5ec7db4df010883c68d35b9619d0</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:50:20</sys_created_on>
+        <sys_id>c0de5ec7db4df010883c68d35b9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fabule Home - Container 1</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sp_container_c0de5ec7db4df010883c68d35b9619d6</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:50:20</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sp_container_c0de5ec7db4df010883c68d35b9619d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Fabule Home - Container 1</name><order>1</order><sp_page display_value="fabule_home">c8de5ec7db4df010883c68d35b9619d0</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>hemanth.jarajapu</sys_created_by><sys_created_on>2021-07-04 11:50:20</sys_created_on><sys_id>c0de5ec7db4df010883c68d35b9619d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Fabule Home - Container 1</sys_name><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_update_name>sp_container_c0de5ec7db4df010883c68d35b9619d6</sys_update_name><sys_updated_by>hemanth.jarajapu</sys_updated_by><sys_updated_on>2021-07-04 11:50:20</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1395779919</payload_hash>
+        <record_name>Fabule Home - Container 1</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:50:20</sys_created_on>
+        <sys_id>88de96c7db8df010883c68d35b961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a715ae6580000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:50:20</sys_updated_on>
+        <type>Container</type>
+        <update_guid>c0de96c7298df01059354a26055e4d41</update_guid>
+        <update_guid_history>c0de96c7298df01059354a26055e4d41:1395779919</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Fabule Home - Container 1">fd1f5ec7db8df010883c68d35b961912</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:51:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>096f96ea5fe544f897b7c24e57dc18f1</sys_id>
+        <sys_metadata>c0de5ec7db4df010883c68d35b9619d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fabule Home - Container 1</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sp_container_c0de5ec7db4df010883c68d35b9619d6</sys_update_name>
+        <sys_update_version display_value="sp_container_c0de5ec7db4df010883c68d35b9619d6">88de96c7db8df010883c68d35b961941</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:51:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bc6a97e5dbf4b010883c68d35b96199b" label="Questionnaire" max_length="40" name="x_350851_fabule_questionnaire" type="collection">
+        <element label="Answer" max_length="50" name="answer" type="string"/>
+        <element label="Content" max_length="32" name="content" read_only="true" reference="x_350851_fabule_content" reference_cascade_rule="delete_no_workflow" type="reference"/>
+        <element display="true" label="Question" mandatory="true" max_length="500" name="question" type="string"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Text" sequence="10" value="text"/>
+                <element inactive_on_update="false" label="Choice" sequence="20" value="choice"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="content"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f546e3a9db38b010883c68d35b96196f" label="Option" max_length="40" name="x_350851_fabule_questionnaire_options" type="collection">
+        <element label="Correct?" max_length="40" name="is_correct" type="boolean"/>
+        <element label="Question" max_length="32" name="question" read_only="true" reference="x_350851_fabule_questionnaire" type="reference"/>
+        <element label="Value" mandatory="true" max_length="50" name="value" type="string"/>
+        <index name="index">
+            <element name="question"/>
+        </index>
+    </element>
+</database>

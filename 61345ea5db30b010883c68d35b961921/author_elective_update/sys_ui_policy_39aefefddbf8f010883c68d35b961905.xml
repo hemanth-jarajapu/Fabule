@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_350851_fabule_questionnaire">type!=^EQ<item display_value="-- None --" endquery="false" field="type" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>10</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	g_form.setDisplay("answer", false);
+	g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    var type = g_form.getValue("type");
+    switch (type) {
+        case 'choice':
+            {
+                g_form.setDisplay("answer", false);
+                g_form.showRelatedList("x_350851_fabule_questionnaire_options.question");
+                break;
+            }
+        case 'text':
+            {
+                g_form.setDisplay("answer", true);
+                g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+                break;
+            }
+        default:
+            {
+                g_form.setDisplay("answer", false);
+                g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+            }
+    }
+}]]></script_true>
+        <set_values/>
+        <short_description>Show input options as per the type of question selected</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-18 06:46:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39aefefddbf8f010883c68d35b961905</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Show input options as per the type of question selected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_ui_policy_39aefefddbf8f010883c68d35b961905</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-18 07:28:03</sys_updated_on>
+        <table>x_350851_fabule_questionnaire</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_ui_policy_39aefefddbf8f010883c68d35b961905</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_350851_fabule_questionnaire"&gt;type!=^EQ&lt;item display_value="-- None --" endquery="false" field="type" goto="false" newquery="false" operator="!=" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;10&lt;/order&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+	g_form.setDisplay("answer", false);
+	g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+    var type = g_form.getValue("type");
+    switch (type) {
+        case 'choice':
+            {
+                g_form.setDisplay("answer", false);
+                g_form.showRelatedList("x_350851_fabule_questionnaire_options.question");
+                break;
+            }
+        case 'text':
+            {
+                g_form.setDisplay("answer", true);
+                g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+                break;
+            }
+        default:
+            {
+                g_form.setDisplay("answer", false);
+                g_form.hideRelatedList("x_350851_fabule_questionnaire_options.question");
+            }
+    }
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Show input options as per the type of question selected&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;hemanth.jarajapu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-18 06:46:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;39aefefddbf8f010883c68d35b961905&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show input options as per the type of question selected&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Fabule" source="x_350851_fabule"&gt;61345ea5db30b010883c68d35b961921&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Fabule"&gt;61345ea5db30b010883c68d35b961921&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_39aefefddbf8f010883c68d35b961905&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hemanth.jarajapu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-18 07:28:03&lt;/sys_updated_on&gt;&lt;table&gt;x_350851_fabule_questionnaire&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>645696496</payload_hash>
+        <record_name>Show input options as per the type of question selected</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-18 07:28:03</sys_created_on>
+        <sys_id>f9590331db7cf010883c68d35b9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a1e0504270000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-18 07:28:03</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>75590331677cf010d8b3218352539ab9</update_guid>
+        <update_guid_history>75590331677cf010d8b3218352539ab9:645696496,a309873d643cf01042fd3ce82d839752:-1605107100,a81783b9bf3cf0107b466e21f8f948ad:-1328541659,35a6073d143cf010aee3763b783a7be3:-840293095,81a50379cc3cf0100c9e079c1ebcb28b:-1899645337,b8350739be3cf01080b8ec52b5e2b2b3:1955439486,00c48779bc3cf0104be8ee69089a011d:-580613667,8c7407391e3cf010c160618de633f7aa:-552768277,f10443757c3cf0107bcb2802070efdbc:-1217450607,29720f75663cf010d22b14205002d25b:-1381559420,e7520bf1a33cf010fa74d32d6f4ec6ed:-589424251,d6c14f353e3cf0109a0c0599fc4dfadb:153639547,1beffafd6cf8f010fef68af76dc551b1:822092061</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-18 07:33:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>12be695d82fe4f4c9023bb3d220b9ae4</sys_id>
+        <sys_metadata>39aefefddbf8f010883c68d35b961905</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show input options as per the type of question selected</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent display_value="Questionnaire">bc6a97e5dbf4b010883c68d35b96199b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_39aefefddbf8f010883c68d35b961905</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_39aefefddbf8f010883c68d35b961905">f9590331db7cf010883c68d35b9619b9</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-18 07:33:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

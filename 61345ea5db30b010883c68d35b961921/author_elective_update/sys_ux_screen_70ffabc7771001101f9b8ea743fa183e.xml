@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Additional Details">b4ffabc766100110eb6d2d1dbf39c53c</macroponent>
+        <macroponent_config>{
+  "sysId" : "@context.props.sysId",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "none",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Additional Details Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record Page(task)">34ffabc7c0100110a16771fc56ad0c31</parent_macroponent>
+        <required_translations>[]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Additional Details">7cffabc72a100110772bb2ae1e7faa33</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-12-13 07:08:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>70ffabc7771001101f9b8ea743fa183e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Additional Details Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_ux_screen_70ffabc7771001101f9b8ea743fa183e</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-12-13 07:08:57</sys_updated_on>
+    </sys_ux_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_ux_screen_70ffabc7771001101f9b8ea743fa183e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config/><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Additional Details">b4ffabc766100110eb6d2d1dbf39c53c</macroponent><macroponent_config>{
+  "sysId" : "@context.props.sysId",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "none",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config><name>Additional Details Default</name><order>0</order><parent_macroponent display_value="Record Page(task)">34ffabc7c0100110a16771fc56ad0c31</parent_macroponent><required_translations>[]</required_translations><screen_condition/><screen_type display_value="Additional Details">7cffabc72a100110772bb2ae1e7faa33</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2021-12-13 07:08:57</sys_created_on><sys_domain>global</sys_domain><sys_id>70ffabc7771001101f9b8ea743fa183e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Additional Details Default</sys_name><sys_overrides/><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_update_name>sys_ux_screen_70ffabc7771001101f9b8ea743fa183e</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2021-12-13 07:08:57</sys_updated_on></sys_ux_screen></record_update>]]></payload>
+        <payload_hash>1546700387</payload_hash>
+        <record_name>Additional Details Default</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 07:15:19</sys_created_on>
+        <sys_id>7a61ff4bdb100110883c68d35b961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db2a554aa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 07:15:19</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>3a61ff4b54100110d9aec00ba7d8c933</update_guid>
+        <update_guid_history>3a61ff4b54100110d9aec00ba7d8c933:1546700387</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 09:06:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>3c7da617653142c49290a7956d5754c4</sys_id>
+        <sys_metadata>70ffabc7771001101f9b8ea743fa183e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Additional Details Default</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_70ffabc7771001101f9b8ea743fa183e</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_70ffabc7771001101f9b8ea743fa183e">7a61ff4bdb100110883c68d35b961933</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 09:06:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
