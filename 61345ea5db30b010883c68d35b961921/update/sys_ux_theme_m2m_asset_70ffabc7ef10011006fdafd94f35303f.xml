@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
+    <sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE">
+        <asset display_value="now-logo-dark">3cffabc7a3100110bca3ea6c093da03e</asset>
+        <properties>{&#13;
+"position": "header_logo"&#13;
+}</properties>
+        <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-12-13 07:08:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>70ffabc7ef10011006fdafd94f35303f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_ux_theme_m2m_asset_70ffabc7ef10011006fdafd94f35303f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-12-13 07:08:57</sys_updated_on>
+        <theme display_value="Light Theme">b8ffabc7f510011083b9fc5c8412a230</theme>
+    </sys_ux_theme_m2m_asset>
+</record_update>

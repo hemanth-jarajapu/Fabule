@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_350851_fabule.ContentUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ContentUtils</name>
+        <script><![CDATA[var ContentUtils = Class.create();
+ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAllContents: function() {
+        var response = {
+            success: false,
+            error: "",
+            result: ""
+        };
+        try {
+            var contents = [];
+            var content;
+            var getTagData = new x_350851_fabule.LabelTagUtils();
+            var tagData, tagCount;
+            var contentGR = new GlideRecord("x_350851_fabule_content");
+            contentGR.addActiveQuery();
+            contentGR.query();
+            while (contentGR.next()) {
+                content = {};
+                tagData = "";
+                content.id = contentGR.getUniqueValue();
+                content.title = contentGR.getValue("title");
+                content.views = contentGR.getValue("views");
+                content.likes = contentGR.getValue("likes");
+                content.creator = contentGR.getValue("creator");
+                content.description = contentGR.getValue("description");
+                content.body = contentGR.getValue("body");
+                content.cover_image = gs.getProperty('glide.servlet.uri') + contentGR.getDisplayValue("cover_image");
+				tagCount = getTagData.getContentTagCount(contentGR.getUniqueValue());
+                tagData = getTagData.getContentTags(contentGR.getUniqueValue());
+				if (tagCount.success) {
+                    content.tag_count = tagCount.result;
+                }
+                if (tagData.success) {
+                    content.tags = tagData.result;
+                }
+                if (content.title && content.body) {
+                    contents.push(content);
+                }
+            }
+
+            if (contents.length > 0) {
+                response.result = contents;
+                response.success = true;
+            } else {
+                response.error = "No contents found";
+            }
+            return response;
+        } catch (err) {
+            gs.error("ContentUtils:getAllContents: " + JSON.stringify(err));
+            return response;
+        }
+    },
+
+    addView: function(contentID) {
+        var response = {
+            success: false,
+            error: ""
+        };
+        try {
+            contentID = contentID ? contentID : this.getParameter("sysparm_content_id");
+            var contentGR = new GlideRecord("x_350851_fabule_content");
+            contentGR.get(contentID);
+            if (!contentGR.isValidRecord()) {
+                response.error = "Content ID is invalid";
+                return response;
+            }
+
+            contentGR.views += 1;
+            contentGR.update();
+            response.success = true;
+            return response;
+        } catch (err) {
+            gs.error("ContentUtils:addView: " + JSON.stringify(err));
+            return response;
+        }
+    },
+
+    addLike: function(contentID) {
+        var response = {
+            success: false,
+            error: ""
+        };
+        try {
+            contentID = contentID ? contentID : this.getParameter("sysparm_content_id");
+            var contentGR = new GlideRecord("x_350851_fabule_content");
+            contentGR.get(contentID);
+            if (!contentGR.isValidRecord()) {
+                response.error = "Content ID is invalid";
+                return response;
+            }
+
+            contentGR.likes += 1;
+            contentGR.update();
+            response.success = true;
+            return response;
+        } catch (err) {
+            gs.error("ContentUtils:addLike: " + JSON.stringify(err));
+            return response;
+        }
+    },
+
+    getQuestionnnaire: function(contentID) {
+        var response = {
+            success: false,
+            error: "",
+            result: ""
+        };
+        try {
+            contentID = contentID ? contentID : this.getParameter("sysparm_content_id");
+            var contentGR = new GlideRecord("x_350851_fabule_content");
+            contentGR.get(contentID);
+            if (!contentGR.isValidRecord()) {
+                response.error = "Content ID is invalid";
+                return response;
+            }
+
+            var questionnaire = [];
+            var question;
+            var questionnaireGR = new GlideRecord("x_350851_fabule_questionnaire");
+            questionnaireGR.addQuery("content", contentID);
+            questionnaireGR.query();
+            while (questionnaireGR.next()) {
+                question = {};
+                question.id = questionnaireGR.getUniqueValue();
+                question.question = questionnaireGR.getValue("question");
+                question.type = questionnaireGR.getValue("type");
+                if (question.type == "text") {
+                    question.answer = questionnaireGR.getValue("answer");
+                } else if (question.type == "choice") {
+                    var options = [];
+                    var option;
+                    var optionsGR = new GlideRecord("x_350851_fabule_questionnaire_options");
+                    optionsGR.addQuery("question", questionnaireGR.getUniqueValue());
+                    optionsGR.query();
+                    while (optionsGR.next()) {
+                        option = {};
+                        option.id = optionsGR.getUniqueValue();
+                        option.value = optionsGR.getValue("value");
+                        option.isCorrect = optionsGR.getValue("is_correct");
+                        if (option.value) {
+                            options.push(option);
+                        }
+                    }
+                    if (options.length > 0) {
+                        question.options = options;
+                    }
+                }
+
+                if (question.answer || question.options) {
+                    questionnaire.push(question);
+                }
+            }
+            if (questionnaire.length > 0) {
+                response.success = true;
+                response.result = questionnaire;
+            } else {
+                response.error = "No questions found";
+            }
+            return response;
+
+        } catch (err) {
+            gs.error("ContentUtils:getQuestionnnaire: " + JSON.stringify(err));
+            return response;
+        }
+    },
+
+    getContentBody: function(contentID) {
+        var response = {
+            success: false,
+            error: "",
+            result: ""
+        };
+        try {
+            contentID = contentID ? contentID : this.getParameter("sysparm_content_id");
+            var contentGR = new GlideRecord("x_350851_fabule_content");
+            contentGR.get(contentID);
+            if (!contentGR.isValidRecord()) {
+                response.error = "Content ID is invalid";
+                return response;
+            }
+
+            var body = contentGR.getValue("body");
+            if (body) {
+                response.result = body;
+                response.success = true;
+            } else {
+                response.error = "No body found";
+            }
+            return response;
+        } catch (err) {
+            gs.error("ContentUtils:getContentBody: " + JSON.stringify(err));
+            return response;
+        }
+    },
+    type: 'ContentUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-24 14:51:52</sys_created_on>
+        <sys_id>795867ffdb783010883c68d35b9619f9</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>ContentUtils</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_script_include_795867ffdb783010883c68d35b9619f9</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-09 11:14:09</sys_updated_on>
+    </sys_script_include>
+</record_update>
