@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_status_of_content">
+    <gsw_status_of_content action="INSERT_OR_UPDATE">
+        <best_practice_allowed_ever>0</best_practice_allowed_ever>
+        <checksum/>
+        <content display_value="Grant full App Engine Studio access to other users">1d03cd3c0f782010310be3d1df767ef8</content>
+        <effective_weight>1</effective_weight>
+        <more_info_visited>false</more_info_visited>
+        <previous_status>0</previous_status>
+        <progress>0</progress>
+        <related_log_entry display_value="22-07-2021 11:56:43">43518e38db25f010883c68d35b9619bc</related_log_entry>
+        <status>1</status>
+        <sys_class_name>gsw_status_of_content</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 10:58:50</sys_created_on>
+        <sys_id>2503d287db4df010883c68d35b9619b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>gsw_status_of_content_2503d287db4df010883c68d35b9619b4</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-22 06:26:43</sys_updated_on>
+    </gsw_status_of_content>
+</record_update>

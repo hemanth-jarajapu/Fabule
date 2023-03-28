@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 09:11:04</sys_created_on>
+        <sys_id>4d57d665db70b010883c68d35b961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_350851_fabule_request.x_350851_fabule.manager</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_security_acl display_value="x_350851_fabule_request">4957d665db70b010883c68d35b961961</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4d57d665db70b010883c68d35b961965</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 09:11:04</sys_updated_on>
+        <sys_user_role display_value="x_350851_fabule.manager" name="x_350851_fabule.manager">8e841eeddb7c7010883c68d35b961944</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_security_acl_role_4d57d665db70b010883c68d35b961965</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>hemanth.jarajapu</sys_created_by><sys_created_on>2021-06-17 09:11:04</sys_created_on><sys_id>4d57d665db70b010883c68d35b961965</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_350851_fabule_request.x_350851_fabule.manager</sys_name><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_security_acl display_value="x_350851_fabule_request">4957d665db70b010883c68d35b961961</sys_security_acl><sys_update_name>sys_security_acl_role_4d57d665db70b010883c68d35b961965</sys_update_name><sys_updated_by>hemanth.jarajapu</sys_updated_by><sys_updated_on>2021-06-17 09:11:04</sys_updated_on><sys_user_role display_value="x_350851_fabule.manager" name="x_350851_fabule.manager">8e841eeddb7c7010883c68d35b961944</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1353426770</payload_hash>
+        <record_name>x_350851_fabule_request.x_350851_fabule.manager</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 09:11:04</sys_created_on>
+        <sys_id>8957d665db70b010883c68d35b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a193cfb370000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 09:11:04</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>c157d665c070b010f6ec4d9e4b462c69</update_guid>
+        <update_guid_history>c157d665c070b010f6ec4d9e4b462c69:-1353426770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_350851_fabule_request.x_350851_fabule.manager">15b62e2ddbb0b010883c68d35b9619c9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 10:18:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>6a9eef39173e42d395ced2f3d56a8cc1</sys_id>
+        <sys_metadata>4d57d665db70b010883c68d35b961965</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_350851_fabule_request.x_350851_fabule.manager</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent display_value="">4957d665db70b010883c68d35b961961</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_4d57d665db70b010883c68d35b961965</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_4d57d665db70b010883c68d35b961965">8957d665db70b010883c68d35b961969</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 10:18:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

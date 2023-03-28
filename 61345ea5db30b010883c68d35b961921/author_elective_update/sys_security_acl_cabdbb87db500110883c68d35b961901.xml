@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x.350851.fabule.*</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 08:09:32</sys_created_on>
+        <sys_id>cabdbb87db500110883c68d35b961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.350851.fabule.*</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_security_acl_cabdbb87db500110883c68d35b961901</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 08:09:32</sys_updated_on>
+        <type display_value="ux_page">b9eb8a1b873303002941b53046cb0b18</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_security_acl_cabdbb87db500110883c68d35b961901</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x.350851.fabule.*</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-13 08:09:32</sys_created_on><sys_id>cabdbb87db500110883c68d35b961901</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x.350851.fabule.*</sys_name><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_update_name>sys_security_acl_cabdbb87db500110883c68d35b961901</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-13 08:09:32</sys_updated_on><type display_value="ux_page">b9eb8a1b873303002941b53046cb0b18</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>267653373</payload_hash>
+        <record_name>x.350851.fabule.*</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 08:09:32</sys_created_on>
+        <sys_id>c9ddff87db500110883c68d35b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db2d6f6b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 08:09:32</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>05ddff87405001103c3bf55551300d61</update_guid>
+        <update_guid_history>05ddff87405001103c3bf55551300d61:267653373</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 09:06:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>000b788896da48d88663118d4c359490</sys_id>
+        <sys_metadata>cabdbb87db500110883c68d35b961901</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.350851.fabule.*</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sys_security_acl_cabdbb87db500110883c68d35b961901</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_cabdbb87db500110883c68d35b961901">c9ddff87db500110883c68d35b961961</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 09:06:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

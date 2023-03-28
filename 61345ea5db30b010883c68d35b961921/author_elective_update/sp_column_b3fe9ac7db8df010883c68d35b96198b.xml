@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>5</order>
+        <size>2</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">a7fe920bdb4df010883c68d35b961960</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:51:08</sys_created_on>
+        <sys_id>b3fe9ac7db8df010883c68d35b96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sp_column_b3fe9ac7db8df010883c68d35b96198b</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:51:08</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sp_column_b3fe9ac7db8df010883c68d35b96198b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>5</order><size>2</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">a7fe920bdb4df010883c68d35b961960</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>hemanth.jarajapu</sys_created_by><sys_created_on>2021-07-04 11:51:08</sys_created_on><sys_id>b3fe9ac7db8df010883c68d35b96198b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>5</sys_name><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_update_name>sp_column_b3fe9ac7db8df010883c68d35b96198b</sys_update_name><sys_updated_by>hemanth.jarajapu</sys_updated_by><sys_updated_on>2021-07-04 11:51:08</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-1067683395</payload_hash>
+        <record_name>5</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:51:08</sys_created_on>
+        <sys_id>bbfe9ac7db8df010883c68d35b96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a715ba1d80000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:51:08</sys_updated_on>
+        <type>Column</type>
+        <update_guid>f3fe9ac7cb8df01065cf446ce7e2d18c</update_guid>
+        <update_guid_history>f3fe9ac7cb8df01065cf446ce7e2d18c:-1067683395</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="5">b11f1ec7db8df010883c68d35b9619fb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-07-04 11:51:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>2ce373f58c45484f9f7cd8e871059c39</sys_id>
+        <sys_metadata>b3fe9ac7db8df010883c68d35b96198b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sp_column_b3fe9ac7db8df010883c68d35b96198b</sys_update_name>
+        <sys_update_version display_value="sp_column_b3fe9ac7db8df010883c68d35b96198b">bbfe9ac7db8df010883c68d35b96198c</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-07-04 11:51:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8dc0be69dbf0b010883c68d35b96195b" label="Tag" max_length="40" name="x_350851_fabule_content_tag" type="collection">
+        <element label="Content" max_length="32" name="content" read_only="true" reference="x_350851_fabule_content" reference_cascade_rule="delete_no_workflow" type="reference"/>
+        <element default="0" label="Count" max_length="40" name="count" read_only="true" type="integer"/>
+        <element display="true" label="Label" max_length="32" name="label" read_only="true" reference="x_350851_fabule_label" reference_cascade_rule="delete_no_workflow" type="reference"/>
+        <index name="index">
+            <element name="content"/>
+        </index>
+        <index name="index2">
+            <element name="label"/>
+        </index>
+    </element>
+</database>

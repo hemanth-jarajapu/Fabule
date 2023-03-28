@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Documentation for the Fabule App API</description>
+        <direct>false</direct>
+        <endpoint>x_350851_fabule_fabule_api_documentation.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<h1 style="color: #5e9ca0;"><span style="color: #000080;">Fabule Scripted API</span></h1>
+The Fabule Scripted API provides methods for interacting with data from the Fabule application
+</j:jelly>]]></html>
+        <name>fabule_api_documentation</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-26 10:09:10</sys_created_on>
+        <sys_id>f26a74acdb053010883c68d35b96197e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>fabule_api_documentation</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_ui_page_f26a74acdb053010883c68d35b96197e</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-26 10:11:44</sys_updated_on>
+    </sys_ui_page>
+</record_update>

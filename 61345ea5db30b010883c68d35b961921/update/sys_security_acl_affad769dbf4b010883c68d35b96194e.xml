@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_350851_fabule_questionnaire</description>
+        <name>x_350851_fabule_questionnaire</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 14:06:42</sys_created_on>
+        <sys_id>affad769dbf4b010883c68d35b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_350851_fabule_questionnaire</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_security_acl_affad769dbf4b010883c68d35b96194e</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 14:06:42</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

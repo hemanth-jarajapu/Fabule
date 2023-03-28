@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>New Request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">cee789852f12101058cbe93df699b697</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 09:11:01</sys_created_on>
+        <sys_id>94579665db70b010883c68d35b9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_wizard_answer_94579665db70b010883c68d35b9619d0</sys_update_name>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 09:11:01</sys_updated_on>
+        <table/>
+        <target_url>x_350851_fabule_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Fabule">61345ea5db30b010883c68d35b961921</application>
+        <file_path/>
+        <instance_id>a638dbdfdb0e770c91232f17d496191f</instance_id>
+        <instance_name>dev88383</instance_name>
+        <name>sys_wizard_answer_94579665db70b010883c68d35b9619d0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>New Request</answer><button_label/><dependent_value/><element/><name>Request</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">cee789852f12101058cbe93df699b697</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>hemanth.jarajapu</sys_created_by><sys_created_on>2021-06-17 09:11:01</sys_created_on><sys_id>94579665db70b010883c68d35b9619d0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Request</sys_name><sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package><sys_policy/><sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope><sys_update_name>sys_wizard_answer_94579665db70b010883c68d35b9619d0</sys_update_name><sys_updated_by>hemanth.jarajapu</sys_updated_by><sys_updated_on>2021-06-17 09:11:01</sys_updated_on><table/><target_url>x_350851_fabule_request.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>-1503580199</payload_hash>
+        <record_name>Request</record_name>
+        <reverted_from/>
+        <source>29345ea5db30b010883c68d35b961923</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 09:11:01</sys_created_on>
+        <sys_id>20579665db70b010883c68d35b9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a193cef9c0000001</sys_recorded_at>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 09:11:01</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>68579665a570b0102f6d0cc221d1f5d2</update_guid>
+        <update_guid_history>68579665a570b0102f6d0cc221d1f5d2:-1503580199</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hemanth.jarajapu</sys_created_by>
+        <sys_created_on>2021-06-17 10:18:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>12f0993716d34a2d828b2d90abcbb0e1</sys_id>
+        <sys_metadata>94579665db70b010883c68d35b9619d0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_parent display_value="Task">cee789852f12101058cbe93df699b697</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_scope_delete display_value="">69a04a89211443308654c50e90f24100</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_94579665db70b010883c68d35b9619d0</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_94579665db70b010883c68d35b9619d0">20579665db70b010883c68d35b9619d3</sys_update_version>
+        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
+        <sys_updated_on>2021-06-17 10:18:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
