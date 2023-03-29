@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_schema">
+    <sys_graphql_schema action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application_namespace>x350851Fabule</application_namespace>
+        <enforce_acl/>
+        <name>Fabule</name>
+        <namespace>fabule</namespace>
+        <paths>Content:active,Content:description,Content:id,Content:likes,Content:tags,Content:title,Content:views,Label:category,Label:id,Label:name,Query:getAllContents,Query:getAllLabels,Tag:content,Tag:count,Tag:id,Tag:label</paths>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <schema>schema {&#13;
+	query: Query&#13;
+}&#13;
+&#13;
+type Query {&#13;
+	getAllContents: [Content!],&#13;
+	getAllLabels: [Label!]&#13;
+}&#13;
+&#13;
+type Content {&#13;
+	id: ID @source(value: "sys_id.value"),&#13;
+	title: String @source(value: "title.value"),&#13;
+	description: String @source(value: "description.value")&#13;
+	views: Int @source(value: "views.value"),&#13;
+	likes: Int @source(value: "likes.value"),&#13;
+	active: Boolean @source(value: "active.display_value"),&#13;
+	tags: [Tag!]&#13;
+}&#13;
+&#13;
+type Tag {&#13;
+	id: ID @source(value: "sys_id.value"),&#13;
+	label: Label @source(value: "label.value"),&#13;
+	count: Int @source(value: "count.value"),&#13;
+	content: Content @source(value: "content.value")&#13;
+}&#13;
+&#13;
+type Label {&#13;
+	id: ID @source(value: "sys_id.value"),&#13;
+	name: String @source(value: "name.value"),&#13;
+	category: Category @source(value: "category.value")&#13;
+}&#13;
+&#13;
+enum Category{&#13;
+	positive,&#13;
+	neutral,&#13;
+	negative&#13;
+}&#13;
+</schema>
+        <sys_class_name>sys_graphql_schema</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-29 13:26:08</sys_created_on>
+        <sys_id>d78b12ba47312110e080e4be436d4373</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Fabule</sys_name>
+        <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
+        <sys_update_name>sys_graphql_schema_d78b12ba47312110e080e4be436d4373</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-29 15:36:33</sys_updated_on>
+        <type_names/>
+    </sys_graphql_schema>
+</record_update>

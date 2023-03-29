@@ -2,9 +2,9 @@
     <element db_object_id="d5dc62a5dbf0b010883c68d35b961950" label="Label" max_length="40" name="x_350851_fabule_label" type="collection">
         <element choice="1" label="Category" mandatory="true" max_length="40" name="category" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Positive" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="Neutral" sequence="20" value="0"/>
-                <element inactive_on_update="false" label="Negative" sequence="30" value="-1"/>
+                <element inactive_on_update="false" label="Positive" sequence="10" value="positive"/>
+                <element inactive_on_update="false" label="Neutral" sequence="20" value="neutral"/>
+                <element inactive_on_update="false" label="Negative" sequence="30" value="negative"/>
             </choice>
         </element>
         <element display="true" label="Name" mandatory="true" max_length="20" name="name" type="string"/>
