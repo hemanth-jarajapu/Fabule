@@ -5,17 +5,25 @@
         <enforce_acl/>
         <name>Fabule</name>
         <namespace>fabule</namespace>
-        <paths>Content:active,Content:description,Content:id,Content:likes,Content:tags,Content:title,Content:views,Label:category,Label:id,Label:name,Query:getAllContents,Query:getAllLabels,Tag:content,Tag:count,Tag:id,Tag:label</paths>
+        <paths>Content:active,Content:description,Content:id,Content:likes,Content:tags,Content:title,Content:views,ContentMutationResponse:content_id,ContentMutationResponse:likes,ContentMutationResponse:message,ContentMutationResponse:status,ContentMutationResponse:views,ErrorResponse:message,ErrorResponse:status,Label:category,Label:id,Label:name,Mutation:addContentView,Mutation:addOrRemoveTag,Mutation:modifyContentLike,Query:getAllContents,Query:getAllLabels,Query:getContent,Tag:content,Tag:count,Tag:id,Tag:label,TagMutationResponse:content_id,TagMutationResponse:count,TagMutationResponse:label_id,TagMutationResponse:message,TagMutationResponse:status,TagMutationResponse:tag_id</paths>
         <requires_acl_authorization>false</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
         <requires_snc_internal_role>true</requires_snc_internal_role>
         <schema>schema {&#13;
 	query: Query&#13;
+	mutation: Mutation&#13;
 }&#13;
 &#13;
 type Query {&#13;
 	getAllContents: [Content!],&#13;
-	getAllLabels: [Label!]&#13;
+	getAllLabels: [Label!],&#13;
+	getContent(id: ID!): Content&#13;
+}&#13;
+&#13;
+type Mutation {&#13;
+	addContentView(id: ID!): MutationResponse,&#13;
+	modifyContentLike(id: ID!, operation: String!): MutationResponse,&#13;
+	addOrRemoveTag(label_id: ID!, content_id: ID!): MutationResponse&#13;
 }&#13;
 &#13;
 type Content {&#13;
@@ -30,9 +38,9 @@ type Content {&#13;
 &#13;
 type Tag {&#13;
 	id: ID @source(value: "sys_id.value"),&#13;
-	label: Label @source(value: "label.value"),&#13;
+	label: Label,&#13;
 	count: Int @source(value: "count.value"),&#13;
-	content: Content @source(value: "content.value")&#13;
+	content: Content&#13;
 }&#13;
 &#13;
 type Label {&#13;
@@ -41,24 +49,56 @@ type Label {&#13;
 	category: Category @source(value: "category.value")&#13;
 }&#13;
 &#13;
-enum Category{&#13;
+enum Category {&#13;
 	positive,&#13;
 	neutral,&#13;
 	negative&#13;
+}&#13;
+&#13;
+interface MutationResponse {&#13;
+	status: ResponseStatus!,&#13;
+	message: String&#13;
+}&#13;
+&#13;
+enum ResponseStatus {&#13;
+	success,&#13;
+	failure&#13;
+}&#13;
+&#13;
+type ContentMutationResponse implements MutationResponse {&#13;
+	status: ResponseStatus!,&#13;
+	message: String,&#13;
+	content_id: ID!,&#13;
+	views: Int,&#13;
+	likes: Int&#13;
+}&#13;
+&#13;
+type TagMutationResponse implements MutationResponse {&#13;
+	status: ResponseStatus!,&#13;
+	message: String,&#13;
+	tag_id: ID!,&#13;
+	content_id: ID!,&#13;
+	label_id: ID!,&#13;
+	count: Int&#13;
+}&#13;
+&#13;
+type ErrorResponse implements MutationResponse {&#13;
+	status: ResponseStatus!,&#13;
+	message: String&#13;
 }&#13;
 </schema>
         <sys_class_name>sys_graphql_schema</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-29 13:26:08</sys_created_on>
         <sys_id>d78b12ba47312110e080e4be436d4373</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Fabule</sys_name>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
         <sys_update_name>sys_graphql_schema_d78b12ba47312110e080e4be436d4373</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-29 15:36:33</sys_updated_on>
-        <type_names/>
+        <sys_updated_on>2023-04-01 09:46:15</sys_updated_on>
+        <type_names>MutationResponse</type_names>
     </sys_graphql_schema>
 </record_update>

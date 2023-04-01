@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver">
     <sys_graphql_resolver action="INSERT_OR_UPDATE">
-        <name>Tags Resolver</name>
+        <name>Content Resolver for Tag</name>
         <schema display_value="Fabule">d78b12ba47312110e080e4be436d4373</schema>
         <script><![CDATA[(function process( /*ResolverEnvironment*/ env) {
 
-    var contentID = env.getSource().sys_id.value;
-    var tagGR = new GlideRecord("x_350851_fabule_content_tag");
-    tagGR.addQuery("content=" + contentID);
-    tagGR.query();
-    return tagGR;
+    var contentID = env.getSource().content.value;
+    var contentGR = new GlideRecord("x_350851_fabule_content");
+    contentGR.get(contentID);
+    return contentGR;
 
 })(env);]]></script>
         <sys_class_name>sys_graphql_resolver</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-29 15:27:03</sys_created_on>
-        <sys_id>2ec60bf247b52110e080e4be436d434c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Tags Resolver</sys_name>
+        <sys_created_on>2023-03-30 08:34:48</sys_created_on>
+        <sys_id>91027a0747b12110e080e4be436d43f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content Resolver for Tag</sys_name>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
-        <sys_update_name>sys_graphql_resolver_2ec60bf247b52110e080e4be436d434c</sys_update_name>
+        <sys_update_name>sys_graphql_resolver_91027a0747b12110e080e4be436d43f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-01 09:11:39</sys_updated_on>
+        <sys_updated_on>2023-03-30 08:34:48</sys_updated_on>
     </sys_graphql_resolver>
 </record_update>

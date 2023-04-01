@@ -31,7 +31,7 @@
             tagOperationResponse = operateOnTag.removeTag(content_id, label_id);
         } else {
             error.setMessage("Given operation value is invalid");
-            error.setDetail("Current supported values are 'add' and 'remove'");
+            error.setDetail("Currently supported values are 'add' and 'remove'");
             return error;
         }
 		
@@ -69,14 +69,14 @@
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2021-07-02 13:42:42</sys_created_on>
         <sys_id>14c1ace2db453010883c68d35b9619f6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>add_remove_tag</sys_name>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
         <sys_update_name>sys_ws_operation_14c1ace2db453010883c68d35b9619f6</sys_update_name>
-        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2021-07-02 13:51:41</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-01 09:41:33</sys_updated_on>
         <web_service_definition display_value="Fabule Service">9917fca8db053010883c68d35b9619d5</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

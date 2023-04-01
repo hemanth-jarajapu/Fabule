@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver_mapping">
     <sys_graphql_resolver_mapping action="INSERT_OR_UPDATE">
-        <path>Query:getAllContents</path>
-        <resolver display_value="Contents Resolver">13e0b68347b12110e080e4be436d43ab</resolver>
+        <path>Mutation:modifyContentLike</path>
+        <resolver display_value="Modify Likes on Content">2d4e857f47352110e080e4be436d434b</resolver>
         <schema display_value="Fabule">d78b12ba47312110e080e4be436d4373</schema>
         <sys_class_name>sys_graphql_resolver_mapping</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-29 13:56:00</sys_created_on>
-        <sys_id>e2f03a7647f12110e080e4be436d437f</sys_id>
+        <sys_created_on>2023-04-01 09:16:36</sys_created_on>
+        <sys_id>64be8dbf47352110e080e4be436d43a4</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
-        <sys_update_name>sys_graphql_resolver_mapping_e2f03a7647f12110e080e4be436d437f</sys_update_name>
+        <sys_update_name>sys_graphql_resolver_mapping_64be8dbf47352110e080e4be436d43a4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 08:30:19</sys_updated_on>
+        <sys_updated_on>2023-04-01 09:45:17</sys_updated_on>
     </sys_graphql_resolver_mapping>
 </record_update>

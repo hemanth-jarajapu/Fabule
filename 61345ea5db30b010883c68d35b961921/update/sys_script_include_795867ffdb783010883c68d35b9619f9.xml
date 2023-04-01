@@ -35,9 +35,9 @@ ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
                 content.description = contentGR.getValue("description");
                 content.body = contentGR.getValue("body");
                 content.cover_image = gs.getProperty('glide.servlet.uri') + contentGR.getDisplayValue("cover_image");
-				tagCount = getTagData.getContentTagCount(contentGR.getUniqueValue());
+                tagCount = getTagData.getContentTagCount(contentGR.getUniqueValue());
                 tagData = getTagData.getContentTags(contentGR.getUniqueValue());
-				if (tagCount.success) {
+                if (tagCount.success) {
                     content.tag_count = tagCount.result;
                 }
                 if (tagData.success) {
@@ -75,9 +75,10 @@ ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
                 return response;
             }
 
-            contentGR.views += 1;
+            contentGR.addValue("views", 1);
             contentGR.update();
             response.success = true;
+            response.views = contentGR.getValue("views");
             return response;
         } catch (err) {
             gs.error("ContentUtils:addView: " + JSON.stringify(err));
@@ -85,13 +86,19 @@ ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         }
     },
 
-    addLike: function(contentID) {
+    addOrRemoveLike: function(contentID, operation) {
         var response = {
             success: false,
             error: ""
         };
         try {
             contentID = contentID ? contentID : this.getParameter("sysparm_content_id");
+            operation = operation ? operation : this.getParameter("sysparm_operation");
+            if (["add", "remove"].indexOf(operation) < 0) {
+                response.error = "Given operation value is invalid. Currently supported values are 'add' and 'remove'";
+                return response;
+            }
+			
             var contentGR = new GlideRecord("x_350851_fabule_content");
             contentGR.get(contentID);
             if (!contentGR.isValidRecord()) {
@@ -99,9 +106,14 @@ ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
                 return response;
             }
 
-            contentGR.likes += 1;
+            if (operation == "add") {
+                contentGR.addValue("likes", 1);
+            } else if (operation == "remove") {
+                contentGR.addValue("likes", -1);
+            }
             contentGR.update();
             response.success = true;
+            response.likes = contentGR.getValue("likes");
             return response;
         } catch (err) {
             gs.error("ContentUtils:addLike: " + JSON.stringify(err));
@@ -208,13 +220,13 @@ ContentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>hemanth.jarajapu</sys_created_by>
         <sys_created_on>2021-06-24 14:51:52</sys_created_on>
         <sys_id>795867ffdb783010883c68d35b9619f9</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>ContentUtils</sys_name>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
         <sys_update_name>sys_script_include_795867ffdb783010883c68d35b9619f9</sys_update_name>
-        <sys_updated_by>hemanth.jarajapu</sys_updated_by>
-        <sys_updated_on>2021-07-09 11:14:09</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-01 09:50:07</sys_updated_on>
     </sys_script_include>
 </record_update>
