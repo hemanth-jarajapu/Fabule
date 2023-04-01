@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_graphql_resolver">
     <sys_graphql_resolver action="INSERT_OR_UPDATE">
-        <name>Add View to Content</name>
+        <name>Modify Likes on Content</name>
         <schema display_value="Fabule">d78b12ba47312110e080e4be436d4373</schema>
         <script><![CDATA[(function process( /*ResolverEnvironment*/ env) {
 
-    var contentID = env.getArguments()["id"];
+    var contentID = env.getArguments().id;
+	var operation = env.getArguments().operation;
     var fabContentUtils = new x_350851_fabule.ContentUtils();
-    var addViewResponse = fabContentUtils.addView(contentID);
+    var addLikeResponse = fabContentUtils.addOrRemoveLike(contentID, operation);
     var response = {
         content_id: contentID
     };
-    if (addViewResponse && addViewResponse.success) {
+    if (addLikeResponse && addLikeResponse.success) {
         response.status = "success";
-        response.message = "View count updated successfully";
-        response.views = addViewResponse.views;
-    } else if (addViewResponse && addViewResponse.error) {
+        response.message = "Like count updated successfully";
+        response.likes = addLikeResponse.likes;
+    } else if (addLikeResponse && addLikeResponse.error) {
         response.status = "failure";
-        response.message = addViewResponse.error;
+        response.message = addLikeResponse.error;
     } else {
         response.status = "failure";
         response.message = "Unexpected error occured";
@@ -27,15 +28,15 @@
 })(env);]]></script>
         <sys_class_name>sys_graphql_resolver</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-29 13:31:50</sys_created_on>
-        <sys_id>f93b2e7a47b12110e080e4be436d43f3</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Add View to Content</sys_name>
+        <sys_created_on>2023-04-01 09:14:28</sys_created_on>
+        <sys_id>2d4e857f47352110e080e4be436d434b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Modify Likes on Content</sys_name>
         <sys_package display_value="Fabule" source="x_350851_fabule">61345ea5db30b010883c68d35b961921</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fabule">61345ea5db30b010883c68d35b961921</sys_scope>
-        <sys_update_name>sys_graphql_resolver_f93b2e7a47b12110e080e4be436d43f3</sys_update_name>
+        <sys_update_name>sys_graphql_resolver_2d4e857f47352110e080e4be436d434b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-01 09:28:58</sys_updated_on>
+        <sys_updated_on>2023-04-01 09:47:09</sys_updated_on>
     </sys_graphql_resolver>
 </record_update>
